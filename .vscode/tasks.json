@@ -1,6 +1,5 @@
 {
     "tasks": [
-        
         {
             "type": "cppbuild",
             "label": "Build with GCC 14.1.0",
@@ -19,7 +18,10 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "detail": "compiler: D:\\mingw64\\bin\\g++.exe"
         },
         {
@@ -64,8 +66,7 @@
             ],
             "group": "build",
             "detail": "compiler: cl.exe"
-        },
-        
+        }
     ],
     "version": "2.0.0"
 }

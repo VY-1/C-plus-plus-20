@@ -24,6 +24,16 @@ int main(){
     std::cout << "var7 occupies: " << sizeof(var7) << " bytes" << std::endl;
     std::cout << "var8 occupies: " << sizeof(var8) << " bytes" << std::endl;
 
+    std::cout << "----------------------------------" << std::endl;
+
+    auto var9 {333u}; //Declare and initialize with type deduction; unsigned
+
+    std::cout << "var9: " << var9 << std::endl;
+
+    var9 = -22; //Assign negative number. DANGER! var9 was unsigned. It will put in garbage value
+
+    std::cout << "var9: " << var9 << std::endl; //Display garbage values
+
     return 0;
 
 }

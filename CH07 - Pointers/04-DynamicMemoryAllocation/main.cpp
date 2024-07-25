@@ -67,8 +67,8 @@ int main(){
     p_number5 = new int(81);
     std::cout << "*p_number5: " << *p_number5 << std::endl;
 
-    delete p_number5;
-    p_number5 = nullptr;
+    delete p_number5;       //delete it,
+    p_number5 = nullptr;    //then reset it
 
 
     return 0;
